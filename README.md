@@ -15,12 +15,12 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](https://github.com/Dejmian11/Equalizer-landing-page/blob/master/assets/design/Screenshot%20-%20Frontend%20Mentor%20Equalizer%20landing%20page.png)
+![](https://github.com/Dejmian11/Meet-landing-page/blob/master/assets/images/design/Screenshot%20-%20Frontend%20Mentor%20Meet%20landing%20page.png)
 
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/equalizer-landing-page-build-with-sass-gor8vGsg80)
-- Live Site URL: [Live](https://astonishing-blini-a5dfb2.netlify.app/)
+- Live Site URL: [Live](https://www.frontendmentor.io/solutions/meet-landing-page-build-with-sass-h1qULN4B0J)
 
 ## My process
 
