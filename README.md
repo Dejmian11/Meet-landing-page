@@ -20,7 +20,7 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor](https
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/equalizer-landing-page-build-with-sass-gor8vGsg80)
-- Live Site URL: [Live](https://www.frontendmentor.io/solutions/meet-landing-page-build-with-sass-h1qULN4B0J)
+- Live Site URL: [Live](https://brilliant-custard-c74113.netlify.app/)
 
 ## My process
 
