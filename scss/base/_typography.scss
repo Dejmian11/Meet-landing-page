@@ -1,0 +1,56 @@
+@use '../abstracts/' as *;
+
+// GOOGLE FONTS
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
+body {
+  color: var(--clr-neutral-500);
+  text-align: center;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
+  line-height: 26px;
+}
+
+.heading-primary,
+.heading-secondary {
+  color: var(--clr-neutral-200);
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: var(--fw-black);
+}
+
+.heading-primary {
+  max-width: 10ch;
+  font-size: var(--fs-heading-primary);
+  line-height: 44px;
+
+  @include respond(md) {
+    line-height: 48px;
+  }
+
+  @include respond(lg) {
+    line-height: 64px;
+  }
+}
+
+.heading-secondary {
+  max-width: 15ch;
+  font-size: var(--fs-heading-secondary);
+  line-height: 36px;
+
+  @include respond(md) {
+    line-height: 44px;
+  }
+}
+
+.heading-tertiary {
+  color: var(--clr-primary-400);
+  font-size: var(--fs-heading-tertiary);
+  letter-spacing: 4px;
+  line-height: 26px;
+  text-transform: uppercase;
+}

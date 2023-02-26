@@ -1,0 +1,50 @@
+@use '../abstracts/' as *;
+
+%btn {
+  display: inline-flex;
+  gap: 0.25rem;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+:where(a, button)[class^='btn-primary'] {
+  @extend %btn;
+
+  padding: 1em 1.8125em;
+  border-radius: 100vmax;
+  color: var(--clr-neutral-900);
+  font-size: var(--fs-button);
+  font-weight: var(--fw-black);
+  line-height: 26px;
+
+  &[download] {
+    padding-inline: 2.5em;
+  }
+}
+
+.btn-primary--blue {
+  background-color: var(--clr-primary-400);
+
+  &:is(:hover, :focus) {
+    background-color: var(--clr-primary-500);
+  }
+
+  & > .btn-primary__version {
+    color: var(--clr-primary-600);
+  }
+}
+
+.btn-primary--purple {
+  background-color: var(--clr-accent-400);
+
+  &:is(:hover, :focus) {
+    background-color: var(--clr-accent-500);
+  }
+
+  & > .btn-primary__version {
+    color: var(--clr-accent-600);
+  }
+}

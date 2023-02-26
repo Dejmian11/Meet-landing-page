@@ -1,0 +1,11 @@
+@use '../abstracts/' as *;
+
+.header {
+  display: grid;
+  place-content: center;
+  padding-block: var(--su-800);
+
+  @include respond(lg) {
+    padding-top: 5rem;
+  }
+}

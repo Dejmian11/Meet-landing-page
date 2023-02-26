@@ -1,0 +1,131 @@
+@use '../abstracts/' as *;
+
+// HERO SECTION ////////////////////////////////////////////
+.hero-section {
+  --content-spacing: var(--su-800);
+
+  display: grid;
+  gap: var(--content-spacing);
+  padding-block: var(--su-300) var(--su-900);
+
+  @include respond(md) {
+    --content-spacing: 4.5rem;
+
+    padding-block: var(--su-400) 5rem;
+  }
+
+  @include respond(xl) {
+    --content-spacing: 5.5rem;
+
+    grid-template-columns: 1fr max-content 1fr;
+    padding-block: 0.8125rem 6.875rem;
+
+    & > :first-child {
+      align-self: start;
+
+      & picture {
+        margin-left: -2.2rem;
+      }
+    }
+
+    & > :last-child {
+      align-self: end;
+
+      & picture {
+        margin-right: -2.2rem;
+      }
+    }
+  }
+
+  &__img {
+    display: grid;
+    place-content: center;
+    overflow-x: hidden;
+
+    & > picture {
+      min-width: 414px;
+
+      @include respond(md) {
+        min-width: 820px;
+      }
+
+      @include respond(xl) {
+        overflow-x: initial;
+        min-width: 0;
+        max-width: 394px;
+      }
+    }
+  }
+
+  & .section__content {
+    @include respond(xl) {
+      padding-block: 2.9375rem var(--su-200);
+    }
+  }
+
+  &__description {
+    max-width: 40ch;
+
+    @include respond(lg) {
+      margin-top: 0.125rem;
+      max-width: 45ch;
+    }
+  }
+}
+
+// ABOUT SECTION ////////////////////////////////////////////
+.about-section {
+  padding-block: 5.25rem 11rem;
+
+  @include respond(md) {
+    padding-bottom: 12rem;
+  }
+
+  @include respond(lg) {
+    padding-bottom: 11.5rem;
+  }
+
+  &__images-group {
+    display: grid;
+    gap: 1.5rem 1.5625rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding-block: var(--su-900);
+
+    @include respond(md) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.6875rem;
+      padding-block: 4.1875rem var(--su-800);
+    }
+
+    @include respond(lg) {
+      gap: 1.875rem;
+      padding-block: var(--su-900) 5rem;
+    }
+  }
+
+  &__img {
+    border-radius: 0.5rem;
+  }
+
+  &__content {
+    @include respond(md) {
+      --content-spacing: var(--su-400);
+    }
+
+    & > :last-child {
+      @include respond(md) {
+        margin-top: var(--su-400);
+      }
+    }
+  }
+
+  &__description {
+    @include respond(md) {
+      max-width: 55ch;
+    }
+
+    @include respond(lg) {
+      max-width: 42ch;
+    }
+  }
+}
